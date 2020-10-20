@@ -15,4 +15,4 @@ const countdown = () => {
   }
 };
 
-let timeOut = window.setInterval(countdown, 1000); //damit wird garantiert das die funktion sich immer wiederholt
+let intervalId = setInterval(countdown, 1000); //damit wird garantiert das die funktion sich immer wiederholt
