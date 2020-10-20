@@ -6,7 +6,7 @@ let time = 20;
 
 const countdown = () => {
   console.log(time); //dadurch sehen wir die "20" als Anfangswert
-  time = time - 1; //dadurch sage ich das immer 1 abgezogen werden soll
+  time--; //dadurch sage ich das immer 1 abgezogen werden soll
   if (time === 0) {
     //dadaurch sage ich wenn die zeit 0 ist wird gestoppt
     clearInterval(timeOut);
@@ -15,4 +15,4 @@ const countdown = () => {
   }
 };
 
-let timeOut = window.setInterval(countdown, 1000); //damit wird garantiert das die funktion sich immer wiederholt
+let intervalId = setInterval(countdown, 1000); //damit wird garantiert das die funktion sich immer wiederholt
